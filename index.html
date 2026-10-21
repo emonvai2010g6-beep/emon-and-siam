@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Siam & Emon Friends | FunZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="badge">🎮 FRIENDS FUN ZONE</div>
+    <h1>siam and emon <span>বন্ধু</span></h1>
+    <p>খেলো, হাসো, ধাঁধা মেলাও—বন্ধুদের সঙ্গে মজার সময় কাটাও!</p>
+    <div class="stats"><span>⭐ সেরা স্কোর: <b id="bestScore">0</b></span><span>🏆 এই সেশনের স্কোর: <b id="score">0</b></span></div>
+  </header>
+  <main>
+    <section class="daily panel">
+      <div><small>আজকের চ্যালেঞ্জ</small><h2 id="dailyTitle">🎡 Lucky Wheel</h2><p id="dailyText">চাকা ঘুরিয়ে মজার চ্যালেঞ্জ বেছে নাও!</p></div>
+      <button id="dailyBtn">চ্যালেঞ্জ শুরু</button>
+    </section>
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="🔎 গেম খুঁজো..." aria-label="গেম খুঁজো">
+      <div class="filters">
+        <button class="filter active" data-filter="সব">সব</button>
+        <button class="filter" data-filter="কুইজ">কুইজ</button>
+        <button class="filter" data-filter="ধাঁধা">ধাঁধা</button>
+        <button class="filter" data-filter="গেম">গেম</button>
+        <button class="filter" data-filter="নতুন">নতুন গেম</button>
+      </div>
+    </section>
+    <section id="cards" class="cards"></section>
+    <section id="gameArea" class="panel game-area" hidden>
+      <div class="game-head"><div><small id="gameCategory">FUN GAME</small><h2 id="gameTitle">গেম</h2></div><button id="closeGame" class="ghost">✕ বন্ধ</button></div>
+      <div id="gameContent"></div>
+    </section>
+    <footer><p>💚 তৈরি করা হয়েছে Siam & Emon বন্ধুদের জন্য</p><small>স্কোর এই ব্রাউজারেই সেভ হয়। GitHub Pages-এ প্রকাশ করা যাবে।</small></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
